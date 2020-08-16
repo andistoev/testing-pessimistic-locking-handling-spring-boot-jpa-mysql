@@ -3,7 +3,7 @@
 More examples here:
 - [Example for Oracle](https://github.com/andistoev/testing-pessimistic-locking-handling-spring-boot-jpa-oracle)
 - [Example for MySQL (this one)](https://github.com/andistoev/testing-pessimistic-locking-handling-spring-boot-jpa-mysql)
-- [Example for Postgresql](https://github.com/andistoev/testing-pessimistic-locking-handling-spring-boot-jpa-postgresql)
+- [Example for PostgreSQL](https://github.com/andistoev/testing-pessimistic-locking-handling-spring-boot-jpa-postgresql)
 
 ### Intro
 This SpringBoot maven project is part of my [blog post](https://blog.mimacom.com/testing-pessimistic-locking-handling-spring-boot-jpa/) where you could find not only explanation for it, but also theoretical background for:
@@ -14,17 +14,17 @@ This SpringBoot maven project is part of my [blog post](https://blog.mimacom.com
 ### Setup
 - Install Docker and JDK8
 - Start Oracle database container from docker/db-up.sh
-- Check with "docker ps" if the container is up&running
+- Check with "docker ps" if the container is up&running.
 
 ### Run pessimistic locking integration test withing in-memory database Apache Derby
 🔔 *Ideal for your DevOps pipeline*
 - Switch profile in InventoryServicePessimisticLockingTest.java to "test" (the default one)
-- Run "./mvnw clean verify"
+- Run "./mvnw clean verify".
 
 ### Run pessimistic locking integration test withing Oracle DB 
 🔔 *Ideal for quick local test to try the real database when changing the pessimistic locking handling code*
 - Switch profile in InventoryServicePessimisticLockingTest.java to "test-oracle"
-- Run "./mvnw clean verify"
+- Run "./mvnw clean verify".
 
 Have fun and do not hesitate to contact me if you have any questions or suggestions!
 
